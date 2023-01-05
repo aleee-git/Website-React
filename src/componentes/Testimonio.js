@@ -1,8 +1,11 @@
 import React from "react";
 
+/* Funcion a mostrar en Main page*/
 function Testimonio () {
     return (
+        /* Componentes de la funcion */
         <div className="cont-testimonio">
+            
             <img className="img-testimonio" src={require("../images/cat.png")} alt="Cat-1"/>
 
             <div className="info-testimonio">
@@ -16,4 +19,5 @@ function Testimonio () {
     );
 }
 
+/* Exportar para llamar componente */
 export default Testimonio;
