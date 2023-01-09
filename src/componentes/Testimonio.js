@@ -8,16 +8,18 @@ function Testimonio (props) {
     return (
         /* Componentes de la funcion */
         <div className="cont-testimonio">
+            {/* Imagen estatica 
+            <img className="img-testimonio" src={require("../images/...png")} alt="Cat-1"/>
+            */}
 
-            <img className="img-testimonio" src={require("../images/cat.png")} alt="Cat-1"/>
+            {/* Imagen dinamica con props */}
+            <img className="img-testimonio" src={require(`../images/Testimonio-${props.imagen}.jpg`)} alt="Cat-1"/>
 
             <div className="info-testimonio">
                 {/* Llamar la propiedad para cada item y accedera a nombre */}
                 <p className="name-testimonio">{props.nombre} en {props.pais} </p>
                 <p className="cargo-testimonio">{props.cargo} en {props.empresa} </p>
-                <p className="text-testimonio">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book"</p>
+                <p className="text-testimonio">"{props.testimonio}"</p>
             </div>
         </div>
     );
