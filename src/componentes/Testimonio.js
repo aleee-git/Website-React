@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Testimonios.css"
 
 /* Funcion a mostrar en Main page*/
 /* EXPORTACION NOMBRADA OP. 2 = export function Testimonio () { */

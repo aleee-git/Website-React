@@ -7,7 +7,10 @@ import Testimonio from "./componentes/Testimonio";
 function App() {
   return (
     <div className="App">
+      <div className= "principal">
+      <h1> Testimonios de gatitos </h1>
       <Testimonio/>
+      </div>
     </div>
   );
 }
